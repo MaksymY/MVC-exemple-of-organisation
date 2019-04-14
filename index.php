@@ -1,5 +1,10 @@
 <?php
 
+// inclusion des fichiers principaux
+  include_once '_config/config.php';
+  include_once '_config/db.php';
+  include_once '_functions/functions.php';
+
 //Definition de la page courante
 if(isset($_GET['page']) && !empty($_GET['page'])) {
   $page = trim(strtolower($_GET['page']));
