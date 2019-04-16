@@ -1,5 +1,4 @@
 <?php
 
-$db = new PDO("");
-
-?>
+$db = new DB(DATABASE_HOST, DATABASE_NAME, DATABASE_USER, DATABASE_PASSWORD);
+$db->setFetchMode(PDO::FETCH_ASSOC);
